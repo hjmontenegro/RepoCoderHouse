@@ -1,0 +1,141 @@
+/* regla para usar una font descargada a la pc */
+@font-face {
+    font-family: Handlock;
+    src: url('../resources/typo/Handlock.otf');
+}
+
+@font-face {
+	font-family: 'AnotherDay';
+	src: url('../assets/font/AnotherDay.ttf');
+}
+
+@font-face {
+	font-family: 'Amstagram';
+	src: url('../assets/font/Amstagram.ttf');
+}
+
+/* regla para usar una font desde la web */
+@import url('https://fonts.googleapis.com/css2?family=Montez&display=swap');
+
+/*  font-family: "Montez", cursive; */
+
+/* reseteo */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Selector de tipo clase */
+
+.cabecera {
+	background-color: #fff;
+	/*position: sticky;*/
+	top: 0px;
+}
+
+.cabecera img {
+	padding: 20px;
+    width: 100px;
+}
+
+nav {
+	position: relative;
+	bottom: 80px;
+    left: 200px;
+    width: 50%;
+}
+
+/* Comienzo menu */
+
+
+.menu, .submenu {
+	font-size: 0;
+	/* truco por el uso de inline-block*/
+	list-style: none;
+}
+
+.menu li {
+	display: inline-block;
+	/*width: 15%;*/
+	position: relative;
+	font-size: 22px;
+    margin: 0 20px;
+}
+
+.submenu {
+	position: absolute;
+	/* display: none; */
+}
+
+.submenu li {
+	display: block;
+	/*width: 200px;*/
+	
+}
+
+.menu li a, .submenu li a {
+	color: black;
+	font-weight: 600;
+	text-decoration: none;
+	font-size: 1.2rem;
+	line-height: 2rem;
+}
+
+
+/* Selector de tipo etiqueta */
+.main h1 {
+    color: rgb(255, 255, 255);
+    background-color: #39145c;
+    text-align: center;
+    font-family: Handlock;
+}
+
+.main h2 {
+    background-color: orangered;
+    color: white; 
+    text-align: center;
+}
+
+
+.bordes-redondeados{
+    border-radius: 15px;
+}
+
+
+/*---------- IMG FONDO ----------*/
+
+.fondo-papel{
+    background-image: url('../resources/oye-arnold.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.nosotros-contenidos p {
+    border:solid 2px black;
+    display: block;
+    width: 500px;
+    height: 200px;
+}
+
+.nosotros-contenidos a {
+    border:solid 2px #0e1096;
+    display: inline-block;
+
+    width: 100px;
+    height: 100px;
+}
+
+.nosotros-contenidos h2 {
+    display: none;
+}
+
+.form input{
+    display: block;
+}
+
+.nosotros-contenidos p.overflow {
+    height: 50px;
+    width: 250px;
+    overflow: auto; /*scroll solo en el sentido que lo necesite - hidden oculta el contenido que no entre*/
+}

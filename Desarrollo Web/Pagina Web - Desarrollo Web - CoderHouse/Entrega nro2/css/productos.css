@@ -1,0 +1,28 @@
+.div-productos
+{
+    width: 400px;
+    height: 200px;
+    float: left;
+    margin: 20px;
+}
+
+.div-productos img
+{
+    width: 300px;
+    height: 200px;
+    margin: 10px 50px;
+}
+
+.div-productos p
+{
+    text-align: justify;
+
+    margin: 10px;
+}
+
+.div-productos h3
+{
+    text-align:left;
+    margin: 10px;
+    font-family: "Montez", cursive;
+}

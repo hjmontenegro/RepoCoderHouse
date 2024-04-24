@@ -1,0 +1,9 @@
+.main-index .carrusel {
+    width: 90%;
+    margin: 0 5%;
+}
+
+.main-index .carrusel img {
+    width: 100%;
+    margin: 0;
+}

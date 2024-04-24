@@ -1,0 +1,16 @@
+.main-nosotros .gupo-nosotros {
+    width: 90%;
+    margin: 5%;
+}
+
+.main-nosotros .indiv-nosotros {
+    width: 30%;
+    float: left;
+    margin: 0 1%;
+}
+
+.main-nosotros .indiv-nosotros img {
+    width: 200px;
+    text-align: center;
+    margin-left: 100px;
+}
