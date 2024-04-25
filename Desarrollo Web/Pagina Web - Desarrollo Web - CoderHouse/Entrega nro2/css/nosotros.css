@@ -1,16 +1,44 @@
 .main-nosotros .gupo-nosotros {
-    width: 90%;
-    margin: 5%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: center;
+    margin: 50px 0;
 }
 
 .main-nosotros .indiv-nosotros {
-    width: 30%;
-    float: left;
-    margin: 0 1%;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
 }
 
-.main-nosotros .indiv-nosotros img {
-    width: 200px;
+.main-nosotros h3 {
+    margin: 15px 0;
+    font-size: 30px;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    width: 100%;
+}
+.main-nosotros h2 {
+    background-color: #333;
+    color: white;
     text-align: center;
-    margin-left: 100px;
+    width: 100%;
+    padding: 10px 5px;
+}
+
+.main-nosotros p.buscamos {
+    margin: 15px;
+    font-size: 18px;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
 }

@@ -29,31 +29,35 @@
 /* Selector de tipo clase */
 
 img.img-logo {
-    width: 100px;
+    width: 180px;
 }
 
 nav {
     width: 100%;
 }
 
-.nav-izq {
-    justify-content: flex-end;
-    flex-basis: 0;
-    flex-grow: 0;
+#navbarToggler {
+    text-align: center;
 }
 
+.footer {
+    color: rgb(255, 255, 255);
+    background-color: #333;
+    margin-top: 50px;
+    padding: 50px 0;
+}
 /* Comienzo menu */
 
 
 /* Selector de tipo etiqueta */
-.main h1 {
+.container h1 {
     color: rgb(255, 255, 255);
-    background-color: #39145c;
+    background-color: #333;
     text-align: center;
     font-family: Handlock;
 }
 
-.main h2 {
+.container h2 {
     background-color: orangered;
     color: white; 
     text-align: center;

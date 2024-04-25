@@ -3,69 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    
     <link rel="stylesheet" href="../css/estilo.css" />
     <link rel="stylesheet" href="../css/nosotros.css" />
     <title>Nosotros</title>
 </head>
 <body>
-    <header class="cabecera">
-		<!-- logo -->
-		<img src="../resources/img/logo.png" alt="logo sitio">
-		<!-- fin logo -->
-		<!-- <h1>Mi primer sitio</h1> -->
-        <nav>
-            <ul class="menu">
-                <!-- (li>a)*5 -->
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./productos.html">Producos</a></li>
-                <li><a href="./preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #333;">
+        <a class="navbar-brand" href="#">
+            <img class="img-logo" src="../resources/img/logo2.png" alt="logo sitio" />
+        </a>
+       
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse topnav-right" id="navbarToggler">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#">Nosotros</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                        Producos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="./productos-camas.html">Camas</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Sábanas</a></li>
+                        <li><a class="dropdown-item" href="#">Cubrecamas</a></li>
+                        <li><a class="dropdown-item" href="#">Almohadas</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="./preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+                <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+        <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+      
+            <li class="nav-item">
+              <a class="nav-link p-2" href="#" rel="noopener" aria-label="GitHub">
+                Facebook
+            </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link p-2" href="#" rel="noopener" aria-label="Twitter">
+                    Twitter
+                </a>
+            </li>
+          </ul>
+    </nav>
 
-    <main class="main main-nosotros">
-        <h1>Nosotros</h1>
+    <main class="container main-nosotros">
+        <img src="../resources/img/Nosotros/Empresa.jpg" class="d-block w-100" alt="Imagen 1" />
+        <h3>Lo que creemos, lo que buscamos</h3>
+        <p class="buscamos">En Muebles Ejemplo definimos nuestro propósito y nuestra misión como proyecto empresarial. 
+            Ambos trazan un horizonte en el que la igualdad deoportunidades, el respeto por el otro y la responsabilidad de dejar una huella positiva en las personas que nos rodean y en el planeta se
+            han convertido oficialmente en nuestros motores.</p>
+        
         <section class="gupo-nosotros">
 
             <section class="indiv-nosotros">
-                <img src="../resources/img/x.png" />
-                <h2>Lorem ipsum dolor sit amet.</h2>
+                <h2>Nuestro propósito</h2>
                 <p class="overflow">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae odio sapiente porro! Debitis quaerat, placeat quidem perspiciatis esse praesentium quo voluptates repellat vero, qui dolorum suscipit dolore natus soluta voluptatibus. Omnis cum non voluptatibus, voluptate earum sit modi excepturi aliquam asperiores dolore exercitationem nobis deserunt nulla perspiciatis doloribus, iste praesentium.</p>
                 <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, sapiente! Eos impedit accusamus distinctio iste nulla dolores quisquam deserunt consequatur.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi cumque similique accusantium aliquam aperiam aliquid, ipsum aspernatur blanditiis consequatur amet a accusamus tempora, quam officia magnam pariatur nulla facilis rem.</p>
             </section>
 
             <section class="indiv-nosotros">
-                <img src="../resources/img/x.png" />
-                <h2>Lorem ipsum dolor sit amet.</h2>
+                <h2>Nuestra Mision.</h2>
                 <p class="overflow">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae odio sapiente porro! Debitis quaerat, placeat quidem perspiciatis esse praesentium quo voluptates repellat vero, qui dolorum suscipit dolore natus soluta voluptatibus. Omnis cum non voluptatibus, voluptate earum sit modi excepturi aliquam asperiores dolore exercitationem nobis deserunt nulla perspiciatis doloribus, iste praesentium.</p>
                 <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, sapiente! Eos impedit accusamus distinctio iste nulla dolores quisquam deserunt consequatur.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi cumque similique accusantium aliquam aperiam aliquid, ipsum aspernatur blanditiis consequatur amet a accusamus tempora, quam officia magnam pariatur nulla facilis rem.</p>
             </section>
 
-            <section class="indiv-nosotros">
-                <img src="../resources/img/x.png" />
-                <h2>Lorem ipsum dolor sit amet.</h2>
-                <p class="overflow">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae odio sapiente porro! Debitis quaerat, placeat quidem perspiciatis esse praesentium quo voluptates repellat vero, qui dolorum suscipit dolore natus soluta voluptatibus. Omnis cum non voluptatibus, voluptate earum sit modi excepturi aliquam asperiores dolore exercitationem nobis deserunt nulla perspiciatis doloribus, iste praesentium.</p>
-                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, sapiente! Eos impedit accusamus distinctio iste nulla dolores quisquam deserunt consequatur.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi cumque similique accusantium aliquam aperiam aliquid, ipsum aspernatur blanditiis consequatur amet a accusamus tempora, quam officia magnam pariatur nulla facilis rem.</p>
-            </section>
         </section>
     </main>
 
-    <!--<footer>
-		<nav>
-            <ul class="menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./productos.html">Producos</a></li>
-                <li><a href="./preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-	</footer>-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label class="vtex-store-components-3-x-label vtex-store-components-3-x-label--block-footer-1-form t-heading-3 tc " for="newsletter-input">Suscribite al Newsletter</label>
+                            <p>Recibí ofertas y novedades en tu mail</p>
+                        </div>
+                        <div class="col-md-4">
+                            <form class="form-inline">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                    <input type="text" class="form-control" placeholder="Escribí tu mail" aria-label="Username" aria-describedby="basic-addon1">
+                                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-4" style="text-align: right;">
+                            <a class="navbar-brand" href="#">
+                                <img class="img-logo" src="../resources/img/logo2.png" alt="logo sitio" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+            
 </body>
 </html>

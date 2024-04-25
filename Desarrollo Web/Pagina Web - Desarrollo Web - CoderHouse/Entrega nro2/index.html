@@ -16,22 +16,26 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-        <a class="navbar-brand" href="#" style="color: white;">Home</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation" style="background-color: white;">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #333;">
+        <a class="navbar-brand" href="#">
+            <img class="img-logo" src="../resources/img/logo2.png" alt="logo sitio" />
+        </a>
+       
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse topnav-right" id="navbarToggler">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
                 <li class="nav-item"><a class="nav-link" href="./pages/nosotros.html">Nosotros</a></li>
-                <!--<li class="nav-item"><a class="nav-link" href="./pages/productos.html">Producos</a></li>-->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
                         Producos
                     </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Camas</a></li>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="./pages/productos-camas.html">Camas</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
@@ -44,87 +48,116 @@
                 <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
             </ul>
         </div>
-      </nav>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid fondo-menu">
-            <a class="navbar-brand" href="#">
-                <img class="img-logo" src="../resources/img/logo.png" alt="logo sitio" />
+        <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+      
+            <li class="nav-item">
+              <a class="nav-link p-2" href="#" rel="noopener" aria-label="GitHub">
+                Facebook
             </a>
-            <button class="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse nav-izq " id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./pages/nosotros.html">Nosotros</a></li>
-                    <!--<li class="nav-item"><a class="nav-link" href="./pages/productos.html">Producos</a></li>-->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Producos
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Camas</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Sábanas</a></li>
-                            <li><a class="dropdown-item" href="#">Cubrecamas</a></li>
-                            <li><a class="dropdown-item" href="#">Almohadas</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="./pages/preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-        </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link p-2" href="#" rel="noopener" aria-label="Twitter">
+                    Twitter
+                </a>
+            </li>
+          </ul>
     </nav>
-    <!--</header>-->
 
-    <main class="main main-index">
-        <h1>Inicio</h1>
 
-        <section class="carrusel">
-            <img src="./resources/img/Carrusel/imagen1.jpg" />
-        </section>
+    <main class="container main-index">
+        <div id="carouselExample"  class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./resources/img/Carrusel/imagen1.jpg" class="d-block w-100" alt="Imagen 2"  />
+                </div>
+                <div class="carousel-item">
+                    <img src="./resources/img/Carrusel/imagen2.jpg" class="d-block w-100" alt="Imagen 2"  />
+                </div>
+                <div class="carousel-item">
+                    <img src="./resources/img/Carrusel/imagen3.jpg" class="d-block w-100"  alt="Imagen 3" />
+                </div>
+                <div class="carousel-item">
+                    <img src="./resources/img/Carrusel/imagen4.jpg" class="d-block w-100" alt="Imagen 4"  />
+                </div>
+            </div>
 
-        <section class="productos-destacados">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    
+        <section class="">
             <h1>Productos Destacados</h1>
+            
+            <!-- FlexBox -->
+            <section class="productos-destacados">
+                <div class="div-productos">
+
+                    <img src="./resources/img/Inicio/Cama1.jpg" alt="Producto en venta" />
+                    
+                    <p class="descripcion">Cama de 2 plazas xxxx</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, doloremque?</p>
+                    <button>Comprar</button>
+                </div>
         
-            <section class="div-productos">
-                <!-- Imagen con enlace abosluto -->
-                <h2 class="bordes-redondeados">Producto Venta 1</h2>
-                <img src="https://laespumeria.vtexassets.com/arquivos/ids/166045-1600-auto?v=638441231670300000&width=1600&height=auto&aspect=true" alt="Producto en venta" />
-                <h3>Descripcion:</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta magnam facilis id assumenda accusamus, earum adipisci officiis aspernatur. A cum libero voluptas voluptatum, sunt nisi odit necessitatibus amet blanditiis obcaecati?</p>
-            </section>
-    
-            <section class="div-productos">
-                <!-- Imagen con enlace abosluto -->
-                <h2 class="bordes-redondeados">Producto Venta 2</h2>
-                <img src="https://laespumeria.vtexassets.com/arquivos/ids/166045-1600-auto?v=638441231670300000&width=1600&height=auto&aspect=true" alt="Producto en venta" />
-                <h3>Descripcion:</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta magnam facilis id assumenda accusamus, earum adipisci officiis aspernatur. A cum libero voluptas voluptatum, sunt nisi odit necessitatibus amet blanditiis obcaecati?</p>
-    
-            </section>
-    
-            <section class="div-productos">
-                <!-- Imagen con enlace abosluto -->
-                <h2 class="bordes-redondeados">Producto Venta 3</h2>
-                <img src="https://laespumeria.vtexassets.com/arquivos/ids/166045-1600-auto?v=638441231670300000&width=1600&height=auto&aspect=true" alt="Producto en venta" />
-                <h3>Descripcion:</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta magnam facilis id assumenda accusamus, earum adipisci officiis aspernatur. A cum libero voluptas voluptatum, sunt nisi odit necessitatibus amet blanditiis obcaecati?</p>
-    
+                <div class="div-productos">
+                    <img src="./resources/img/Inicio/Cama1.jpg" alt="Producto en venta" />
+                    <p class="descripcion">Cama de 2 plazas xxxx</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, doloremque?</p>
+                    
+                    <button>Comprar</button>
+                </div>
+        
+                <div class="div-productos">
+                    <img src="./resources/img/Inicio/Cama1.jpg" alt="Producto en venta" />
+                    <p class="descripcion">Cama de 2 plazas xxxx</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, doloremque?</p>
+                    
+                    <button>Comprar</button>
+                </div>
+
             </section>
         </section>
     </main>
-    <footer>
-
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label class="vtex-store-components-3-x-label vtex-store-components-3-x-label--block-footer-1-form t-heading-3 tc " for="newsletter-input">Suscribite al Newsletter</label>
+                            <p>Recibí ofertas y novedades en tu mail</p>
+                        </div>
+                        <div class="col-md-4">
+                            <form class="form-inline">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                    <input type="text" class="form-control" placeholder="Escribí tu mail" aria-label="Username" aria-describedby="basic-addon1">
+                                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-4" style="text-align: right;">
+                            <a class="navbar-brand" href="#">
+                                <img class="img-logo" src="../resources/img/logo2.png" alt="logo sitio" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
     <!-- JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        
 </body>
 </html>
